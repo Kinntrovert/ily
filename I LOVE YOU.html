@@ -1,0 +1,69 @@
+<html>
+  <style>
+
+  #btn_mau{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+      }
+  #btn_mau {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+#btn_mau:hover {
+    background-color: #e7e7e7;
+    color: white;
+    }
+
+    #btn_gamau{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+      }
+  #btn_gamau {
+  background-color: white;
+  color: black;
+  border: 2px solid  #f44336;
+}
+
+#btn_gamau:hover {
+    background-color: #f44336;
+    }
+  </style>
+    <body>
+        <h1>Hai cantikkkk</h1>
+        <img src="https://media1.giphy.com/media/a9QBC2aru310k/giphy.gif?cid=790b7611533f054e8ed4a6db457afc4597adb3b40abf1d8b&rid=giphy.gif&ct=g">
+        <h1>Mau ga jadi pacarku?</h1>
+        <button id='btn_mau' onclick='alert("I LOVE YOU")'>Mau</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
